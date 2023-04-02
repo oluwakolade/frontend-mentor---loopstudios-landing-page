@@ -1,0 +1,257 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Alata', sans-serif; */
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+  position: relative;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 1px solid white;
+}
+
+
+
+header {
+  height: 100vh;
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.nav-links .links {
+  justify-self: end;
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  padding-bottom: 0.5rem;
+}
+
+.nav-img {
+  z-index: 2;
+}
+
+
+.hero-section {
+  width: 50%;
+  margin-top: 8rem;
+  padding: 2rem;
+  border: 1px solid white;
+  display: grid;
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+p,
+h2,
+h3 {
+  color: var(--VeryDarkGray);
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+
+
+h2.secondary-header {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding-right: 2rem;
+}
+
+.interactive-img {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.interactive-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.interactive-txt {
+  background: white;
+  padding: 2rem 4rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.creations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  justify-self: end;
+}
+
+.btn button {
+  padding: 0.7rem 3rem;
+  border: 1px solid black;
+  background: none;
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  justify-self: end;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn button:hover {
+  color: white;
+  background-color: black;
+  padding: 0.9rem 3.3rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.mobile-img {
+  visibility: hidden;
+  display: none;
+}
+
+.card {
+  position: relative;
+  align-self: center;
+}
+
+.card-txt {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  color: var(--White);
+  /* padding-right: 10rem;
+    font-weight: 300;
+    font-size: 1.2rem; */
+  width: 35%;
+  z-index: 1;
+}
+
+.desktop-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  background: hsl(0, 0%, 55%, 0.9);
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: black;
+  margin-top: 6.4rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.pad {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 3.2rem 0;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-links a {
+  padding-bottom: 1rem;
+}
+
+.footer-icons,
+.copyright {
+  justify-self: end;
+}
+
+.footer-icons {
+  align-self: baseline;
+  cursor: pointer;
+}
+
+.nav-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-nav[name="close-outline"] {
+  display: none;
+}

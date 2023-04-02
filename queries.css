@@ -1,0 +1,271 @@
+@media (max-width: 75em){
+
+    .container{
+        padding: 2rem 2rem;
+
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+
+}
+
+
+@media (max-width: 59em){
+    .container{
+        padding: 2rem 2rem;
+
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-section{
+        width: 50%;
+        margin-top: 8rem;
+        padding: 3rem;
+    
+    }
+    
+  .interactive-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 0;
+  }
+  .interactive-txt {
+    background: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .desktop{
+    display: none;
+  }
+.mobile{
+    display: block;
+    margin: 0 auto;
+}
+
+}
+
+@media (max-width: 44em) {
+  .container {
+    margin: 0 auto;
+  }
+
+
+  header {
+    height: 100vh;
+    background-image: url("./images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+   
+  }
+
+  nav {
+    padding: 2rem 2rem;
+  }
+
+  .nav-btn {
+    display: block;
+    justify-self: center;
+    z-index: 2;
+  }
+
+  .nav-open .icon-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-links {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.5s;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav-links{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-left: 2rem;
+  }
+
+  .nav-links a {
+    padding-bottom: 0.5rem;
+  }
+
+  .links a:hover::after {
+    left: 0;
+    right: 90%;
+  }
+
+  .hero-section {
+    width: 80%;
+    margin: 8rem auto;
+  }
+
+
+  h2.secondary-header {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .interactive-txt.secondary-header{
+    padding: 0 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+
+
+  .interactive-section {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  .mobile{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+  .creations {
+    margin-bottom: 0rem;
+    text-align: center;
+    margin: 0 auto;
+   
+  }
+
+  .creations h2{
+    width: 200%;
+    text-align: center;
+   
+    
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .mobile-img {
+    visibility: visible;
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .card {
+    position: relative;
+    align-self: center;
+  }
+  .card-txt {
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+    color: var(--White);
+    width: 35%;
+    z-index: 1;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .overlay {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 10%;
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    background: hsl(0, 0%, 55%, 0.9);
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .gallery-container {
+    position: relative;
+    padding-bottom: 4rem;
+  }
+
+  .btn {
+    justify-self: center;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer {
+    background-color: black;
+    margin-top: 6.4rem;
+  }
+
+  .flex {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1rem;
+  }
+
+  .pad {
+    margin-bottom: 1rem;
+  }
+  .footer {
+    text-align: center;
+    padding: 3.2rem 0;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links a {
+    padding-bottom: 1rem;
+  }
+  .footer-links {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-icons {
+    grid-row: 3;
+  }
+  .footer-icons,
+  .copyright {
+    justify-self: center;
+  }
+}
